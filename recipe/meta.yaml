@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  ignore: True  # [win]
+  skip: True  # [win]
   run_exports:
     # excellent: add new symbols sometimes, none removed.
     #    https://abi-laboratory.pro/tracker/timeline/pixman/
