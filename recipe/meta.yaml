@@ -1,17 +1,20 @@
-{% set version = "0.38.0" %}
+{% set version = "0.38.5dev0" %}
 
 package:
   name: pixman
   version: {{ version }}
 
 source:
-  url: http://cairographics.org/releases/pixman-{{ version }}.tar.gz
-  sha256: a7592bef0156d7c27545487a52245669b00cf7e70054505381cff2136d890ca8
+  #  url: http://cairographics.org/releases/pixman-{{ version }}.tar.gz
+  #  sha256: a7592bef0156d7c27545487a52245669b00cf7e70054505381cff2136d890ca8
+  url: https://gitlab.freedesktop.org/pixman/pixman/-/archive/ba5d794515fa3ea91dd4ea9222a23c2642070aed/pixman-ba5d794515fa3ea91dd4ea9222a23c2642070aed.tar.gz
+  sha256: fe23591013d73da3ecccba3b6311a8fef19a143a5c257ba6a4243118e071311a
   patches:
     - no_test.patch  # [win]
 
 build:
-  number: 1003
+  number: 0
+  skip: True  # [win]
   run_exports:
     # excellent: add new symbols sometimes, none removed.
     #    https://abi-laboratory.pro/tracker/timeline/pixman/
@@ -21,6 +24,9 @@ requirements:
   build:
     - posix  # [win]
     - pkg-config  # [not win]
+    - libtool      # [unix]
+    - automake     # [unix]
+    - autoconf     # [unix]
     - {{ compiler('c') }}
     - make  # [unix]
 
@@ -43,3 +49,4 @@ extra:
     - ccordoba12
     - jakirkham
     - ocefpaf
+    - sdvillal
