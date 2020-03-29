@@ -23,6 +23,9 @@ requirements:
   build:
     - posix  # [win]
     - pkg-config  # [not win]
+    - libtool      # [unix]
+    - automake     # [unix]
+    - autoconf     # [unix]
     - {{ compiler('c') }}
     - make  # [unix]
 

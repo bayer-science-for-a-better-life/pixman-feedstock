@@ -10,6 +10,8 @@ fi
 
 export CFLAGS="-fPIC ${CFLAGS}"
 
+./autogen.sh
+
 ./configure --prefix=$PREFIX \
             --host=${HOST} \
             $OPTS
