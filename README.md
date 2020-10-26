@@ -5,9 +5,11 @@ Home: http://www.pixman.org/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/sdvillal/pixman-feedstock/blob/master/LICENSE.txt)
 
 Summary: A low-level software library for pixel manipulation.
+
+Development: https://cgit.freedesktop.org/pixman/
 
 Pixman is a low-level software library for pixel manipulation, providing
 features such as image compositing and trapezoid rasterization.
@@ -31,36 +33,30 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_target_platformlinux-64</td>
+              <td>linux_64_target_platformlinux-64</td>
               <td>
                 <a href="https://dev.azure.com/sdvillal/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/pixman-feedstock?branchName=master&jobName=linux&configuration=linux_target_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/pixman-feedstock?branchName=master&jobName=linux&configuration=linux_64_target_platformlinux-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_target_platformosx-64</td>
+              <td>osx_64_target_platformosx-64</td>
               <td>
                 <a href="https://dev.azure.com/sdvillal/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/pixman-feedstock?branchName=master&jobName=osx&configuration=osx_target_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/pixman-feedstock?branchName=master&jobName=osx&configuration=osx_64_target_platformosx-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_target_platformwin-64</td>
+              <td>win_64_target_platformwin-64</td>
               <td>
                 <a href="https://dev.azure.com/sdvillal/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/pixman-feedstock?branchName=master&jobName=win&configuration=win_target_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/pixman-feedstock?branchName=master&jobName=win&configuration=win_64_target_platformwin-64" alt="variant">
                 </a>
               </td>
             </tr>
           </tbody>
         </table>
       </details>
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
     </td>
   </tr>
 </table>
